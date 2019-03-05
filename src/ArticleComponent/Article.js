@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Title from './TitleComponent/Title'
-import Content from './ContentComponent/Content'
+import Title from "../TitleComponent/Title"
+import Content from '../ContentComponent/Content'
 import './Article.css';
 
 class Article extends Component {

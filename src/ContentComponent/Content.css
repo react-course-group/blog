@@ -1,4 +1,7 @@
 .content{
-    background-color: yellow;
-    padding: 10%
+    background-color: #DAEFB3;
+
+}
+.content p {
+    margin-top: 0%;
 }
