@@ -1,7 +1,7 @@
 .content{
     background-color: #DAEFB3;
-
-}
-.content p {
-    margin-top: 0%;
+    padding:10px;
+    text-align: left;
+    padding-bottom: 20px;
+    margin:0%;
 }

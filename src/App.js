@@ -4,18 +4,17 @@ import './App.css';
 
 class App extends Component {
 
-  state = {
-    articles :[
-      {title:"title 1",content:"content1"},
-      {title:"title 1",content:"content1"},
-      {title:"title 1",content:"content1"}
-    ]
+  state = { articles: [] };
+
+  componentDidMount() {
+    fetch('http://blog-api.webneat.net/posts').then(response => response.json()).then(json => this.setState({articles:json}))
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.articles.map( article => <Article title={article.title} content={article.content}/> )}
+        {this.state.articles!=null ? this.state.articles.map((article, index) => <Article key={index} title={article.title} content={article.content} updatedAt={article.updatedAt} />):
+            <p>qsldfjkqlmsk</p> }
       </div>
     );
   }

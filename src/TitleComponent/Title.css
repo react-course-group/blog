@@ -1,9 +1,18 @@
 .title{
     background-color: #EA9E8D;
-
+    font-size: 11px;
+    padding:13px;
+    padding-left: 50px;
 }
+
 .title h1{
+    text-align: left;
     margin-top: 0%;
     margin-bottom: 0%;
-    
+}
+
+.title .updateAt{
+    float:right;
+    font-size: 15px;
+    padding-top:5px;    
 }

@@ -5,9 +5,9 @@ import './Article.css';
 
 class Article extends Component {
   render() {
-    return (
+  return (
       <div className="article">
-        <Title title={this.props.title}/>
+        <Title title={this.props.title} updatedAt={this.props.updatedAt} />
         <Content content={this.props.content}/>
       </div>
     );
