@@ -3,7 +3,7 @@ import Title from "../TitleComponent";
 import Content from "../ContentComponent";
 import "./Article.css";
 
-function article(props) {
+function Article(props) {
   return (
     <div className="article">
       <Title title={props.title} createdAt={props.createdAt} />
@@ -12,4 +12,4 @@ function article(props) {
   );
 }
 
-export default article;
+export default Article;

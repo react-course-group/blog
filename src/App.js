@@ -16,7 +16,7 @@ class App extends Component {
       <div className="App">
         {this.state.articles.length > 0 ? (
           this.state.articles.map((article) => (
-            <Article {...article} />
+            <Article key={article.id} {...article} />
           ))
         ) : (
           <p>qsldfjkqlmsk</p>
