@@ -6,7 +6,7 @@ import "./Article.css";
 function article(props) {
   return (
     <div className="article">
-      <Title title={props.title} updatedAt={props.updatedAt} />
+      <Title title={props.title} createdAt={props.createdAt} />
       <Content content={props.content} />
     </div>
   );
