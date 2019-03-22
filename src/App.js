@@ -1,28 +1,18 @@
-import React, { Component } from "react";
-import Article from "./ArticleComponent";
+import React, { Component }  from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Post from "./pages/Article";
 import "./App.css";
 
 class App extends Component {
-  state = { articles: [] };
-
-  componentDidMount() {
-    fetch("http://blog-api.webneat.net/posts")
-      .then(response => response.json())
-      .then(json => this.setState({ articles: json }));
-  }
 
   render() {
     return (
-      <div className="App">
-        {this.state.articles.length > 0 ? (
-          this.state.articles.map((article) => (
-            <Article key={article.id} {...article} />
-          ))
-        ) : (
-          <p>qsldfjkqlmsk</p>
-        )}
-      </div>
-    );
+      <BrowserRouter>
+        <Route exact={true} path="/post/:id" component={Post} />
+        <Route exact={true} path="/" component={Home} />
+      </BrowserRouter>
+      );
   }
 }
 
