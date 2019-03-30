@@ -1,0 +1,27 @@
+.article {
+  background-color: rebeccapurple;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+
+.title {
+  background-color: rebeccapurple;
+  font-size: 11px;
+  padding: 13px;
+  padding-left: 50px;
+}
+
+.title h1 {
+  text-align: left;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.title .createdAt {
+  float: right;
+  font-size: 15px;
+  padding-top: 5px;
+}
